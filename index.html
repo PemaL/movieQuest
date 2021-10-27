@@ -2,34 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <title>MovieQuery</title>
+        
     </head>
     <body> 
-        <div class= "logo">
+       
+       <header>
            <h1>Welcome to Movie Query </h1>
-        </div>
-        <form id="search-form">
+        </header>
+        <form id="search-form" >
             <input type="search" placeholder=" " id="inputValue"/>
             <button id="searchBtn"> Search </button>
           </form>
 
-          <!-- <div id="movie-details">
-            <img class="detail-image" src=""/>
-            <h2 class="movie-name"></h2>
-            <h3 class="movie-overview"></h3>
-            <h3 class= "release-date"></h3>
-            <h3 class="rating"> </h3>
-          </div> -->
-
           <div id = "search-results" >
               <!-- show search resuls-->
           </div>
-
+          <div class = "load-movies">
           <div id="upcoming-movies">
               <h2> Upcoming Movies </h2>
              <!-- Show upcoming movies-->
@@ -39,6 +32,15 @@
               <h2> Popular movies </h2>
             <!--Show popular movies-->
          </div>
+</div>
+
+<div id = "modal"> 
+      <p id="detail-title"></p>
+      <img src=" " class = "detail-img">
+      <p id="overview"></p>
+      <p id = "votes"></p>
+
+</div>
 
         <script src="Index.js"></script>
     </body>

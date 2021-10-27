@@ -1,18 +1,23 @@
 * {
-    font-family: 'Sigmar One', cursive;
-    background-color: wheat;
+    font-family: 'Zen Old Mincho', serif;
+    background-color: blanchedalmond;
 }
+/* header{
+    background-image: url("img/header-image.jpeg");
+    padding-top: 40px;
+    text-align: justify;
+    position: relative;
+
+} */
 
 h1{
-    margin-left:30%;
-    color: black;   
-    
+  text-align: center;
 }
 
 form{
  padding-left: 30%;
- padding-top: 0%;
- padding-bottom: 40px;
+ padding-top: 5%;
+ padding-bottom: 20px;
 }
 
 input{
@@ -36,8 +41,19 @@ img{
     float:left;
     padding: 20px;
 }
+/* .each-movie:hover{
+    /* margin-left: 0 40px;
+    transform: scale(1.9);
+    cursor:pointer; */
+    /* position:relative;
+    top:-25px;
+    left:-35px;
+    width:400px;
+    height:auto;
+    display:block;
+    z-index:999;
 
-
+} */ 
 .each-movie{
     text-align: center;
     padding: 10px;
@@ -46,18 +62,48 @@ img{
     /* display: inline-block; */
     /* padding: 40px; */
     margin: 10px;
-    border: solid black;
+    border: solid black ;
     border-width: 5px;
-    border-radius: 10px;
-  margin-left: 30px;
+    border-radius: 20px;
+    margin-left: 30px;
     
 }
 #search-results{
+
    text-align: center;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    
 }
-    
 
+#popular-movies , #upcoming-movies{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1px;
 
+}
+
+.load-movies{
+    padding-top: 10%;
+}
+
+#modal{
+    margin-top: 20%;
+    position: fixed;
+    top: 10%;
+    left: 12%;
+    width:75%;
+    z-index:1000;
+    /* display: none; */
+    /* height: 20%; */
+    text-align: center;
+   
+}
+.detail-img{
+    width: 20%;
+    padding-bottom: 10px;
+}
+#detail-title{
+    font-size: x-large;
+    margin-bottom: 10px;
+}
