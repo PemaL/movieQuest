@@ -14,6 +14,7 @@ const displayTitle = modal.querySelector("#detail-title")
 const displayImage = modal.querySelector(".detail-img")     
 const overView = modal.querySelector("#overview")
 const votes = modal.querySelector("#votes")
+const closeBtn = document.querySelector('#close')
 
 
 // search and display results 
@@ -61,9 +62,12 @@ function showDetails(movie){
          displayTitle.textContent = movie.title;
          displayImage.src = imgPath + movie.poster_path;
          overView.textContent = movie.overview;
-         votes.textContent = movie.vote_count;
-         
-         console.log(modal);
+         votes.textContent = "Rating: " + movie.vote_average +"/10";
+         closeBtn.addEventListener('click', () => {
+              modal.style.display = "none"
+            })
+            modal.style.display ="block";
+     
 }
 
 //get popular movies 
@@ -82,6 +86,8 @@ fetch(popularURL)
             movieImage.src = imgPath + movie.poster_path;
             movieResult.append(movieImage,movieTitle);
             popularMovies.append(movieResult);
+
+            movieResult.addEventListener('click',() => showDetails(movie))
         })
     })
 
@@ -102,5 +108,7 @@ fetch(upcomingURL)
             movieImage.src = imgPath + movie.poster_path;
             movieResult.append(movieImage,movieTitle);
             upcomingMovies.append(movieResult);
+
+            movieResult.addEventListener('click',() => showDetails(movie))
         })
     })
