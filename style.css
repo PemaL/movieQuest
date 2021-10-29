@@ -1,21 +1,29 @@
 * {
-    font-family: 'Zen Old Mincho', serif;
-    background-color: blanchedalmond;
+    font-family: 'Special Elite', cursive;
+    background-color: black;
+  
 }
-/* header{
-    background-image: url("img/header-image.jpeg");
-    padding-top: 40px;
-    text-align: justify;
-    position: relative;
-
-} */
-
+header{
+   padding: 20px;
+    background-image: url(/img/4840775.jpeg);
+    width: 90%;
+    padding-bottom: 30px;
+    padding-right: 0;
+    margin-bottom: 5%;
+    padding-left: -20%;
+}
 h1{
   text-align: center;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-name: slidein; 
-
+  /* margin-top: 11%; */
+  border-radius:10px;
+  margin-top: 0%;
+  /* padding-bottom: 5%; */
+  background-color: white;
+ 
 }
+
  @keyframes slidein {
     from {
       margin-left: 100%;
@@ -30,24 +38,31 @@ h1{
 
 form{
  padding-left: 30%;
- padding-top: 5%;
- padding-bottom: 20px;
+ /* padding-top: 5%; */
+ /* padding-bottom: 5px; */
+ font-size: medium;
+ padding-top: 20px;
+
 }
 
 input{
 width: 50%;
 border-radius: 25px;
-background-color: white;
-opacity: 0.6 ;
+background-color:white;
+opacity: 0.8;
 border-style: solid; 
 border-color: black;
 border-width: 3px;
+font-size: large;
 }
 
-button{
+#search-form button{
 border-radius: 25px;
-border-width: 2px;
-border-color: black;
+border-width: 4px;
+border-color: white;
+color: white;
+font-size: medium;
+
 }
 
 img{
@@ -76,7 +91,7 @@ img{
     width: 10rem;
     height: 20rem;
     margin: 10px;
-    border: solid black ;
+    border: solid white ;
     border-width: 5px;
     border-radius: 20px;
     margin-left: 30px;
@@ -85,6 +100,10 @@ img{
 }
 .title{
     font-size: large;
+    color: white;
+    border-color: black;
+    background-color: black;
+
 }
 #search-results{
 
@@ -94,48 +113,96 @@ img{
    
 }
 
-#popular-movies , #upcoming-movies{
+
+#popular-movies , #upcoming-movies {
     display: flex;
     justify-content: center;
     padding-bottom: 1px;
+    color: white;
 
+}
+#genre-results{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .load-movies{
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 #modal{
-    margin-top: 20%;
-    position:absolute;
-    top: 10%;
-    left: 12%;
-    width:75%;
+    margin-top: 10%;
+    position:fixed;
+    top: 10vh;
+    left: 25%;
+    width:50%;
     z-index:1000;
     display:none;
-    border: solid black;
-     text-align: center;
+    border: solid white;
+    text-align: center;
     box-shadow: 5px 5px 5px black;
+    color: white;
+
    
 }
 .detail-img{
-    width: 30%;
-
+    width: 20%;
    
 }
 #detail-title{
     font-size: x-large;
     margin-bottom: 10px;
-    margin-left: 20%;
+    margin-left: 10%;
     text-decoration: underline;
+    margin-top: 0%;
+    color: white;
 
 }
 #overview{
     font-size: medium;
     padding-top: 5%;
     padding-top: 5%;
+    color: white;
+    text-align: left;
   
 }
 #close{
+    margin-top: 10px;
     margin-left: 90%;
+    color: white;
+    background: none;
+    border: none;
 }
+#search-text{
+    color:white;
+    text-align: left;
+    font-size: large;
+    text-decoration: underline;
+}
+.each-movie button{
+    color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+p#form-p{
+    font-size:large;
+}
+
+#liked-movies{
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 6%;
+}
+
+#liked-movies h2{
+    /* padding: 2%;
+    text-align: left;
+    margin-right: 60%;
+    position: relative; */
+    /* create a draggable scrollbar */
+    overflow-y: scroll;
+    text-align: left;
+  }

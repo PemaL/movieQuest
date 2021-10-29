@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/137bde9409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
-        
     </head>
     <body> 
        
@@ -15,13 +15,24 @@
            <h1>Welcome to Movie Query </h1>
       </header>
       <form id="search-form" >
-            <input type="search" placeholder=" " id="inputValue"/>
-            <button id="searchBtn"> Search </button>
-       </form>
+           <input type="search" placeholder=" " id="inputValue"/>
+            <button id="searchBtn"> Search By Title</button> 
+            <button id="genreBtn"> Search By Genre</button> 
+       </form> 
 
-         <div id = "search-results" >
+       <div id="search-text">
+        <p id = "form-p"> </p>
+       </div>
+       
+       <div id="liked-movies">  
+          <h2> Liked Movies</h2>
+       </div>
+       <div id = "search-results" >
               <!-- show search resuls-->
-          </div>
+        </div>
+        <div id = "genre-results" >
+          <!-- show search resuls-->
+    </div>
         <div class = "load-movies">
           <div id="upcoming-movies">
               <h2> Upcoming Movies </h2>
@@ -35,12 +46,13 @@
         </div>
 
      <div id = "modal"> 
-       <button type = "button" id ="close" >x</button>
+      <button id="close"><i class="far fa-times-circle fa-2x"></i></button>
       <p id="detail-title"></p>
       <img src=" " class = "detail-img">
       <p id="overview"></p>
+      <p id = "release_date"></p>
       <p id = "votes"> </p>
-
+      <p id ="trailer"></p>
      </div>
 
     <script src="index.js"></script>
